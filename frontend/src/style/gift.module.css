@@ -1,0 +1,45 @@
+
+/* CSS for gift Section */
+
+.Gift{
+    background: rgb(20,20,20);
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgb(26, 26, 26) 52%, rgb(30, 30, 30) 63%, rgb(33, 33, 33) 72%, rgba(31,31,31,1) 86%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+}
+.Gift img{
+   width : 500px
+}
+.giftText{
+    width: 500px;
+    margin-right: 100px;
+    text-align: start;
+    box-sizing: border-box;
+}
+.giftText p,b,span {
+    color: rgb(199, 199, 199);
+}
+
+/* Media Query for Gift */
+
+@media screen and (max-width: 480px) {
+    .Gift{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .Gift img{
+        margin-left: -25px;
+    }
+    .giftText , p, h1{
+        text-align: center;
+        width: 90%;
+        margin-left: 20px;
+    }
+    
+}

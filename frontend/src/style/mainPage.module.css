@@ -1,0 +1,25 @@
+.stopmostcontainer{
+    /* background-image: url("../Pics/pxfuel\ \(1\).jpg");
+    background-size: cover;
+    background-position: fixed; */
+    /* background-color: rgb(23, 22, 22); */
+    background: rgb(20,20,20);
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgb(26, 26, 26) 52%, rgb(30, 30, 30) 63%, rgb(33, 33, 33) 72%, rgba(31,31,31,1) 86%);
+    height:100vh;
+    /* border: solid red; */
+}
+
+.mainhands{
+    /* background-image: url('https://png.pngtree.com/png-clipart/20220314/original/pngtree-3d-rendering-diamond-decoration-png-image_7437732.png'); */
+    /* background-image: url('../Pics/SH_mani_con_gioielli_oro-2.jpg-PhotoRoom.png-PhotoRoom.png'); */
+    background-image: url('../Pics/HomePageDiamonds.webp');
+    
+    /* border: solid red; */
+    
+    /* background-size: cover; */
+    background-size: contain; /* or 'cover' depending on the desired effect */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height:90%;
+}
