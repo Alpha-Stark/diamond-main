@@ -40,3 +40,5 @@ const port = process.env.PORT || 8000; // const port = process.env.PORT;
 app.listen(port, () => {
     console.log(`Server is running on port number ${port}`);
 });
+
+module.exports = app;

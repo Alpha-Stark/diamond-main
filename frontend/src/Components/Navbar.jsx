@@ -17,7 +17,7 @@
 //       <Link to="/bag" as={NavLink}>
 //         Bag
 //       </Link>
-import { Flex, Heading, Link, Text, useDisclosure, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, Button, IconButton } from "@chakra-ui/react";
+import { Flex, Heading, Link, Text, useDisclosure, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, Button, IconButton, Image } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -38,7 +38,10 @@ export const Navbar = ({ setQuery }) => {
             <Flex justify="space-between" alignItems="center" p="4" h={{ base: "10vh", md: "10vh", lg: "10vh", xl: "10vh" }} w="100%" className={styles.navbaronly} zIndex="1000">
                 <Flex align="center">
                     <IconButton display={{ base: "flex", md: "none" }} onClick={isOpen ? onClose : onOpen} icon={isOpen ? <CloseIcon /> : <HamburgerIcon />} variant="ghost" color="white" aria-label="Toggle Navigation" />
-                    <Link to="/" as={NavLink} p="1">
+                    <Link to="/" as={NavLink} p="1" display="flex" alignItems="center">
+                        {/* import the ShivstarLogo from src directory here  for image tag*/}
+
+                        <Image src={require("../ShivstarLogo.png")} alt="Logo" boxSize="40px" mr="2" width={"85px"} height={"55px"} />
                         <Heading as="h4" fontSize="25px" color="white" ml={{ base: "4", md: "0" }}>
                             SHIVSTAR IMPEX
                         </Heading>
